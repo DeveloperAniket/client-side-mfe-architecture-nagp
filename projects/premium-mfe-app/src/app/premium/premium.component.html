@@ -1,0 +1,59 @@
+<div class="container">
+    <br>
+    <div class="row">
+        <div class="col">
+        </div>
+        <div class="col text-center col-md-7">
+            <h5>Note : Insurance Premium mfe</h5>
+            <p>Insurance Premium mfe got Policy Number from Insurance Details mfe
+        </div>
+        <div class="col ">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col ">
+        </div>
+        <div class="col-md-5">
+            <div class="card mb-4">
+                <div class="card-header bg-info cardhead"><b> Policy Premium Payment </b></div>
+                <div class="card-body">
+                    <div class="row mt-8">
+                        <div class="col-md-12">
+                            <label class="labels">Policy Number</label>
+                            <input class="form-control" readonly [ngModel]="policyNumber">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12"><label class="labels">Premium Amount</label><input type="text"
+                                class="form-control" placeholder="Enter premium amount" [(ngModel)]="policyPremium">
+                        </div>
+                    </div>
+                    <div class="row mt-3" *ngIf="enableCalculatePremium">
+                        <div class="mt-5 text-center"><button class="btn btn-success profile-button" type="button"
+                                (click)="calculatePremium()">Calculate Premium</button></div>
+                    </div>
+                    <div *ngIf="workerResult"><b>Worker Response:
+                            <br>
+                        </b>Final Premium calculated After discount {{workerResult}}
+                    </div>
+
+
+                    <div class="mt-5 text-center" *ngIf="enablePayment"><button class="btn btn-success profile-button"
+                            type="button" (click)="payment()">Premium Payment</button></div>
+
+                    <div class="mt-5 text-center" *ngIf="!enablePayment && !enableCalculatePremium">
+                        <a class="btn btn-info" routerLink="/insurance-details" routerLinkActive="active">
+                            <i class="fa fa-search"></i> Search Policy
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col ">
+        </div>
+
+    </div>
+</div>

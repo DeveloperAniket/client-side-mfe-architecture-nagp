@@ -1,0 +1,20 @@
+{
+    "/insurance": {
+      "target": "http://localhost:5001",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/insurance/": ""
+        },
+      "logLevel": "debug"
+    },
+    "/premium": {
+        "target": "http://localhost:5002",
+        "secure": false,
+        "changeOrigin": true,
+        "pathRewrite": {
+          "^/premium/": ""
+          },
+        "logLevel": "debug"
+      }
+  }

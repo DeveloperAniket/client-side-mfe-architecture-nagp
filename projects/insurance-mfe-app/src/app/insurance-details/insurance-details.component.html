@@ -1,0 +1,80 @@
+<div class="container">
+  <br>
+  <div class="row">
+    <div class="col">
+    </div>
+    <div class="col col-8 text-center">
+      <h5>Note : Insurance Details mfe</h5>
+    </div>
+    <div class="col ">
+    </div>
+  </div>
+  <div class="row details">
+    <div class="col ">
+    </div>
+    <div class="col col-8">
+      <div class="d-flex">
+        <input class="form-control" type="search" placeholder="Enter Policy Number (P01 to P10)" aria-label="Search"
+          #filter (keydown.enter)="filterResults(filter.value)">
+        <button class="btn btn-primary left-10" type="button" (click)="filterResults(filter.value)">Search</button>
+      </div>
+    </div>
+    <div class="col">
+    </div>
+
+    <br>
+    <br>
+    <div class="row" *ngIf="filteredPolicy">
+      <div class="col ">
+      </div>
+      <div class="col col-8">
+        <div class="card mb-4 ">
+          <div class="card-header bg-info policyCard"><b> Policy Details </b></div>
+          <div class="card-body">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row">Policy Number:</th>
+                  <td>{{filteredPolicy?.policyNumber}}</td>
+                  <th scope="row">Coverage Type:</th>
+                  <td>{{filteredPolicy?.coverage?.type}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Policy Premium:</th>
+                  <td>{{filteredPolicy?.premium | currency }}</td>
+                  <th scope="row">Coverage Amount:</th>
+                  <td>{{filteredPolicy?.coverage?.amount | currency}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Policy Holder:</th>
+                  <td>{{filteredPolicy?.policyHolder?.name}}</td>
+                  <th scope="row">Age:</th>
+                  <td>{{filteredPolicy?.policyHolder?.age}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Gender:</th>
+                  <td>{{filteredPolicy?.policyHolder?.gender}}</td>
+                  <th scope="row">Beneficiary Name:</th>
+                  <td>{{filteredPolicy?.beneficiaries[0]?.name}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">Beneficiary Relation</th>
+                  <td>{{filteredPolicy?.beneficiaries[0]?.relationship}}</td>
+                  <th scope="row">Beneficiary Percentage:</th>
+                  <td>{{filteredPolicy?.beneficiaries[0]?.percentage}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="d-grid gap-2 col-3 mx-auto">
+            <a class="btn btn-info" routerLink="/premium-payment"
+              [queryParams]="{ policy: filteredPolicy?.policyNumber}">Pay Premium</a>
+          </div>
+          <br>
+        </div>
+      </div>
+      <div class="col">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,212 @@
+[
+    {
+        "coverage": {
+            "amount": 37977,
+            "deductible": 3973,
+            "type": "Home"
+        },
+        "premium": 2618,
+        "policyNumber": "P01",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Emma Brown",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "David Williams",
+            "age": 69
+        }
+    },
+    {
+        "coverage": {
+            "amount": 19696,
+            "deductible": 3337,
+            "type": "Home"
+        },
+        "premium": 2551,
+        "policyNumber": "P02",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Emma Brown",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Female",
+            "name": "Emma Brown",
+            "age": 37
+        }
+    },
+    {
+        "coverage": {
+            "amount": 17209,
+            "deductible": 805,
+            "type": "Health"
+        },
+        "premium": 940,
+        "policyNumber": "P03",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Alice Smith",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "David Williams",
+            "age": 55
+        }
+    },
+    {
+        "coverage": {
+            "amount": 44111,
+            "deductible": 2058,
+            "type": "Health"
+        },
+        "premium": 3208,
+        "policyNumber": "P04",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Alice Smith",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "Alice Smith",
+            "age": 38
+        }
+    },
+    {
+        "coverage": {
+            "amount": 70553,
+            "deductible": 2706,
+            "type": "Home"
+        },
+        "premium": 1637,
+        "policyNumber": "P05",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "John Doe",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "John Doe",
+            "age": 28
+        }
+    },
+    {
+        "coverage": {
+            "amount": 88353,
+            "deductible": 3847,
+            "type": "Life"
+        },
+        "premium": 1779,
+        "policyNumber": "P06",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Emma Brown",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "Olivia Jones",
+            "age": 43
+        }
+    },
+    {
+        "coverage": {
+            "amount": 17832,
+            "deductible": 3314,
+            "type": "Life"
+        },
+        "premium": 1217,
+        "policyNumber": "P07",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Michael Johnson",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "John Doe",
+            "age": 24
+        }
+    },
+    {
+        "coverage": {
+            "amount": 83382,
+            "deductible": 2120,
+            "type": "Home"
+        },
+        "premium": 604,
+        "policyNumber": "P08",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Alice Smith",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Female",
+            "name": "David Williams",
+            "age": 50
+        }
+    },
+    {
+        "coverage": {
+            "amount": 25390,
+            "deductible": 2282,
+            "type": "Health"
+        },
+        "premium": 727,
+        "policyNumber": "P09",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Alice Smith",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "John Doe",
+            "age": 44
+        }
+    },
+    {
+        "coverage": {
+            "amount": 25706,
+            "deductible": 1809,
+            "type": "Auto"
+        },
+        "premium": 1370,
+        "policyNumber": "PL10",
+        "beneficiaries": [
+            {
+                "percentage": 100,
+                "name": "Emma Brown",
+                "relationship": "Spouse"
+            }
+        ],
+        "policyHolder": {
+            "gender": "Male",
+            "name": "Olivia Jones",
+            "age": 41
+        }
+    }
+]

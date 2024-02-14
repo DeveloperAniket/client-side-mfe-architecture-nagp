@@ -1,0 +1,35 @@
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [
+  { 
+    path:"",
+    redirectTo:"home",
+    pathMatch:'full'
+},
+  { 
+    path: "home",
+    component: HomeComponent,
+    pathMatch: 'full'
+  },
+  {
+    path:"insurance-details",
+    loadChildren: () => import("insuranceMfeApp/InsuranceDetailsModule").then(m => m.InsuranceDetailsModule)
+  },
+  {
+    path:"premium-payment",
+    loadChildren: () => import("premiumMfeApp/PremiumModule").then(m => m.PremiumModule)
+  },
+  {
+    path: '**', 
+    redirectTo:"home",
+    pathMatch: 'full'
+  }
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
